@@ -14,7 +14,8 @@ public class HomeController {
 
     @GetMapping("/exception")
     public String getException() throws Exception{
-        if (true) {
+        if (false) {
+            // this point will never be reached
             throw new Exception("this point threw an exception");
         }
         return "Hello Sanil";
